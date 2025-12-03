@@ -1,0 +1,12 @@
+<Solution>
+	<Folder Name="/MyBuddy.AppHost/">
+		<Project Path="src/MyBuddy.AppHost/MyBuddy.AppHost.csproj" />
+	</Folder>
+	<Folder Name="/MyBuddy.WebAPI/">
+		<Project Path="src/MyBuddy.WebAPI/MyBuddy.WebAPI.csproj" />
+	</Folder>
+	<Folder Name="/MyBuddy.WasmClient/">
+		<Project Path="src/MyBuddy.WasmClient/MyBuddy.WasmClient.csproj" />
+	</Folder>
+
+</Solution>

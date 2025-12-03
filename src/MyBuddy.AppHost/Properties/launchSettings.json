@@ -1,0 +1,30 @@
+{
+  "profiles": {
+		"https": {
+				"commandName": "Project",
+				"launchBrowser": true,
+				"environmentVariables": {
+						"ASPNETCORE_ENVIRONMENT": "Development",
+						"DOTNET_ENVIRONMENT": "Development",
+						"ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "https://localhost:21282",
+						"ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "https://localhost:22212"
+				},
+				"dotnetRunMessages": true,
+				"applicationUrl": "https://localhost:17133;http://localhost:15090",
+				"jsWebView2Debugging": true
+		},
+    "http": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "ASPIRE_DASHBOARD_OTLP_ENDPOINT_URL": "http://localhost:19239",
+        "ASPIRE_RESOURCE_SERVICE_ENDPOINT_URL": "http://localhost:20030"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:15090"
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.5.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>7d9997f3-108d-4bb6-bdea-8b0274cb333f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+   <PackageReference Include="Aspire.Hosting.AppHost" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyBuddy.WasmClient\MyBuddy.WasmClient.csproj" />
+    <ProjectReference Include="..\MyBuddy.WebAPI\MyBuddy.WebAPI.csproj" />
+  </ItemGroup>
+
+</Project>
