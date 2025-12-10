@@ -1,0 +1,6 @@
+<button @onclick="Navigator.Backwards" disabled="@(!Navigator.CanGoBackwads)">PREVIOUS</button>
+<button @onclick="Navigator.Forwards" disabled="@(!Navigator.CanGoForwards)">NEXT</button>
+@code{
+    [Parameter]
+    public Navigator Navigator { get; set; }
+}

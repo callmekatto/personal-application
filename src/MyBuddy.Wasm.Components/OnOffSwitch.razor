@@ -1,0 +1,37 @@
+@inherits WasmComponent
+<input type="checkbox" class="settings_entry_switch" @bind="Checked.Value" />
+
+
+@code{
+
+    [Parameter] public Param<bool> Checked { get; init; } = new(val=>true);
+
+    private static bool ValidateChecked(bool value)
+    {
+        
+    }
+
+    // protected override 
+    public record Param<T>
+    {
+        public T? Value { get; set; }
+        private readonly Func<T, bool>? validateDelegate;
+
+        public Param(T value)
+        {
+            this.Value = value;
+        }
+        public Param(T value, Func<T,bool> validateDelegate)
+        {
+            this.Value = value;
+            this.validateDelegate = validateDelegate;
+        }
+        public Param(Func<T, bool> validateDelegate)
+        {
+            
+        }
+        public static implicit operator Param<T>(T value) => new(value);
+        public static implicit operator T(Param<T> value) => value;
+
+    }
+}

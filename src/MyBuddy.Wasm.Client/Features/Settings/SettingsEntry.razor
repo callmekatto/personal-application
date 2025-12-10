@@ -1,0 +1,20 @@
+<span>@Title</span>
+@Content
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public EntryType Type { get; set; }
+
+    private RenderFragment Content => Type switch
+    {
+        EntryType.Switch =>@<div></div>,
+        _ => @<div></div>
+    };
+
+    public enum EntryType
+    {
+        Switch
+    }
+}

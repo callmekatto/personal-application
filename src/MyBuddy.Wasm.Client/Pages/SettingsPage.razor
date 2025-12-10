@@ -1,0 +1,14 @@
+<h3>SettingsPage</h3>
+
+<div>
+    <h4>Theme</h4>
+    <div>
+        <span>Enable dark mode?</span>
+        <input type="checkbox" @bind="useDarkMode"/>
+    </div>
+</div>
+<OnOffSwitch Checked="true"  ></OnOffSwitch>
+
+@code {
+    bool useDarkMode = true;
+}

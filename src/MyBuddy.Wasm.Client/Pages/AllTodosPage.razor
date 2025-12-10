@@ -1,0 +1,13 @@
+<h3>AllTodos</h3>
+<ul>
+
+    @foreach (var todo in todos)
+    {
+        <li>@todo</li>
+    }
+</ul>
+
+@code {
+    List<string> todos = ["first todo", "second todo"];
+
+}

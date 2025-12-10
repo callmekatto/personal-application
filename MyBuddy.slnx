@@ -2,11 +2,13 @@
 	<Folder Name="/MyBuddy.AppHost/">
 		<Project Path="src/MyBuddy.AppHost/MyBuddy.AppHost.csproj" />
 	</Folder>
-	<Folder Name="/MyBuddy.WebAPI/">
-		<Project Path="src/MyBuddy.WebAPI/MyBuddy.WebAPI.csproj" />
+	<Folder Name="/MyBuddy.Web/">
+		<Project Path="src/MyBuddy.Web.API/MyBuddy.Web.API.csproj" />
 	</Folder>
-	<Folder Name="/MyBuddy.WasmClient/">
-		<Project Path="src/MyBuddy.WasmClient/MyBuddy.WasmClient.csproj" />
+	<Folder Name="/MyBuddy.Wasm/">
+		<Project Path="src/MyBuddy.Wasm.Components/MyBuddy.Wasm.Components.csproj" />
+		<Project Path="src/MyBuddy.Wasm.Client/MyBuddy.Wasm.Client.csproj" />
 	</Folder>
+	<Folder Name="/Shared/" />
 
 </Solution>

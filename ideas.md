@@ -17,3 +17,4 @@
 - [ ] app needs to sync over the network
 - [ ] app uses events to handle changes - not direct object changes
 - [ ] there should be a user story for every scenario the user can encounter
+- [ ] wasm uses middleware to render components - definable inside program.cs?
